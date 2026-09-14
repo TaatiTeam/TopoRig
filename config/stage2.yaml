@@ -1,0 +1,16 @@
+# Stage 2: initialize from runs/phase1/checkpoints/best.pt (or use --resume).
+schema_version: 1
+recipe: stage2
+paths:
+  data_root: data
+  cache_root: .cache
+  output_root: runs
+  waft_root: third_party/WAFT
+run:
+  gpus: 1
+  batch_size: 4
+  loader_workers: 0
+  cache_workers: 4
+phase2:
+  epochs: 10
+  learning_rate: 0.0001

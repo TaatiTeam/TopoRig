@@ -1,0 +1,39 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+*.egg-info/
+build/
+dist/
+*.whl
+.DS_Store
+
+# Local assets, checkpoints and generated work
+/data/
+/datasets/
+/reference_assets/
+/checkpoints/
+/checkpoints_main_and_ablations_*/
+/third_party/
+/.cache/
+/runs/
+/wandb/
+/artifacts/
+/outputs/
+/debug_visualizations/
+/prediction_glbs/
+/logs/
+*.log
+*.pt
+*.pth
+*.h5
+*.hdf5
+*.glb
+!/samples/*.glb
+!/samples_demo/*.glb
+
+# Standalone Hugging Face Space bundle
+/hf_demo/

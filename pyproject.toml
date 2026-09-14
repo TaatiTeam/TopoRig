@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "toporig"
+version = "0.1.0"
+description = "Topology-agnostic facial rigging, training and evaluation"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26,<2", "scipy", "torch", "PyYAML", "Pillow", "trimesh", "h5py", "tqdm"]
+
+[project.optional-dependencies]
+demo = ["bpy==4.2.0", "mediapipe==0.10.21", "opencv-contrib-python==4.11.0.86", "matplotlib", "imageio", "imageio-ffmpeg", "fast-simplification"]
+training = ["wandb", "torchvision", "timm", "einops", "gdown"]
+hub = ["huggingface-hub"]
+app = ["gradio==6.27.0"]
+
+[tool.setuptools]
+py-modules = ["train", "demo", "gradio_app", "map_mediapipe_landmarks"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["dataset*", "model*", "utils*", "scripts*"]

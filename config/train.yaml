@@ -1,0 +1,22 @@
+# Stage 1: mesh pretraining. See docs/REPRODUCING.md.
+recipe: stage1
+paths:
+  data_root: data
+  cache_root: .cache
+  output_root: runs
+  waft_root: third_party/WAFT
+run:
+  seed: 7
+  device: auto
+  gpus: 1
+  batch_size: 4
+  loader_workers: 0
+  cache_workers: 4
+  wandb: false
+phase1:
+  epochs: 20
+  learning_rate: 0.0005
+phase2:
+  epochs: 10
+  learning_rate: 0.0001
+schema_version: 1
