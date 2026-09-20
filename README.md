@@ -134,7 +134,12 @@ for input conventions, gaze animation, export and landmark-cache options.
 For training from scratch or evaluating the published checkpoints, follow
 [Training and evaluation](docs/REPRODUCING.md).
 
-## Data license
+## License
 
-The dataset is available for free noncommercial academic research and teaching
-under the [TopoRig Academic Use License](docs/DATASET_LICENSE.md).
+The TopoRig code and model checkpoints are available for noncommercial academic
+research, education, and teaching under the
+[TopoRig Academic Use License 1.0](LICENSE.md).
+
+Commercial use requires separate written permission from the applicable rights
+holders. Third-party dependencies and assets remain subject to their respective
+licenses.
