@@ -111,7 +111,7 @@ python demo.py \
 
 Outputs include the deformed GLB and preview images. Replace `--mesh` with a
 neutral FBX or GLB to use your own head. Automatic alignment uses the downloaded
-MetaHuman reference mesh. For OBJ inputs, provide a landmark mapping beside the
+ICT reference mesh. For OBJ inputs, provide a landmark mapping beside the
 mesh with the same stem and a `.json` extension. `--au-id` accepts
 an AU name or an integer from 0 to 52; the names are printed by:
 
